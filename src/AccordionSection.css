@@ -1,0 +1,43 @@
+.accordion__button {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 1rem;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    color: #333;
+    background-color: #f7f7f7;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion__button:hover {
+    background-color: #ebebeb;
+}
+
+.accordion__button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0077ff;
+}
+
+.accordion__button::after {
+    content: "+";
+    margin-left: 1rem;
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.accordion__button--open::after {
+    content: "-";
+}

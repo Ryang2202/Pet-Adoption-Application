@@ -1,0 +1,35 @@
+.articles {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+
+    padding: 0 1rem;
+    margin: 2rem auto;
+}
+
+.articles__tittle {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+
+.articles__text {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: left;
+    
+    padding: 0.5rem;
+}
+
+
+@media (max-width: 44rem) {
+    .articles {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 30rem;
+        margin: 1rem;
+        padding: 1 rem;
+    }
+}

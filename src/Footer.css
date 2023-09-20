@@ -1,0 +1,45 @@
+.footer {
+    background-color: var(--bg-banner-color);
+    padding: 0.5rem;
+
+    display: grid;
+    grid-template-areas: 
+    "footer__content footer__social-list";
+}
+
+.footer__content{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.footer__social-list {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer__social-list{
+    grid-area: footer__social-list;
+    margin-left: auto;
+}
+.footer__social-item{
+    padding-right: 1rem;
+    padding-top: 2rem;
+}
+
+
+@media (max-width: 44rem) {
+    .footer__social-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__social-item{
+        padding: 0.2rem;
+        margin: 0;
+    }
+}
+

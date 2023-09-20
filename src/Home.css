@@ -1,0 +1,152 @@
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0 rem;
+    padding: 0rem;;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel__image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: papayawhip;
+    border: none;
+    cursor: pointer;
+
+    color: black;
+    font-size: 3rem;
+    outline: none;
+  }
+  
+  .carousel-button.previous {
+    left: 20px;
+  }
+  
+  .carousel-button.next {
+    right: 20px;
+  }
+
+  
+  .home__header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .home__header-title {
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .home__header-subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+.home__header-content {
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    margin-right: 2rem;
+    padding: 0;
+    margin-left: 2rem;
+  }
+
+.pannels__header-subtitle{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+  }
+
+.pannels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 3rem;
+    margin: 2rem;
+}
+
+.home__panel {
+    width: 100%;
+    padding: 1rem;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #eeeeee;
+
+    box-sizing: border-box;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.home__panel-pic {
+    width: 200px;
+    height: 200px;
+
+    display: block;
+    margin: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.home__panel-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    padding: 0rem;
+    margin: 0;
+    text-align: center;
+}
+
+.home__panel-text {
+    font-size: 1rem;
+
+    padding: 0.5rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+
+
+@media (max-width: 44rem) {
+    .pannels {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home__panel-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+}
